@@ -36,7 +36,7 @@ def search():
         left = verifyPhoto.location['x']-100
         top = verifyPhoto.location['y']-100
         right = verifyPhoto.location['x'] + verifyPhoto.size['width']-100
-        bottom = verifyPhoto.location['y'] + verifyPhoto.size['height']
+        bottom = verifyPhoto.location['y'] + verifyPhoto.size['height']-200
 
         im = ImageGrab.grab((left, top, right, bottom))
         im.save('code.jpg')
